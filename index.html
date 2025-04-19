@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suhani Loya - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f4c75;
+      --accent: #3282b8;
+      --bg: #f5f7fa; 
+
+      --card-bg: #ffffff;
+      --text: #1b262c;
+      --muted: #5c6b73;
+    } 
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Work Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--card-bg);
+      border-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 0.5rem 2rem;
+      z-index: 1000;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    header.hero {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(145deg, #e8f1f8, #f5f7fa);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      color: var(--primary);
+    }
+
+    .hero p {
+      margin-top: 1rem;
+      max-width: 600px;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    section {
+      max-width: 860px;
+      margin: auto;
+      padding: 3rem 1.5rem 2rem;
+      background: var(--card-bg);
+      margin-top: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--accent);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    section h3 {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: var(--primary);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.5rem;
+    }
+
+    ul li::before {
+      content: '›';
+      margin-right: 0.5rem;
+      color: var(--accent);
+    }
+
+    ul li {
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-info span {
+      display: block;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 3rem 0 1rem;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#activities">Activities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Suhani Loya</h1>
+    <p>First-year BBA student focused on Digital Business and Entrepreneurship. I love blending learning with practical challenges and opportunities.</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am currently pursuing BBA at IIM Bangalore, specializing in Digital Business and Entrepreneurship. My academic curiosity meets a real-world learning mindset. I thrive on collaboration, initiative, and exploring impactful ideas through business and innovation.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Technical</h3>
+    <ul>
+      <li>MS Word</li>
+      <li>MS Excel</li>
+      <li>PowerPoint</li>
+      <li>Tally (ongoing)</li>
+    </ul>
+    <h3>Soft</h3>
+    <ul>
+      <li>Quick learner</li>
+      <li>Teamwork</li>
+      <li>Active listening</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <h3>Intern, Bank of Baroda</h3>
+    <p><em>September 2023 – Nagpur, India</em></p>
+    <ul>
+      <li>Guided customers through loan processes and documentation</li>
+      <li>Maintained accurate data entries and account records</li>
+      <li>Managed inquiries across phone and in-person channels</li>
+      <li>Evaluated CIBIL scores for eligibility insights</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>BBA - Digital Business and Entrepreneurship</strong>, IIM Bangalore — <em>Expected 2027</em></li>
+      <li><strong>Class 12</strong>, Bhavans Vidya Mandir — 90.6% (2024)</li>
+      <li><strong>Class 10</strong>, Centre Point School — 86.2% (2022)</li>
+    </ul>
+  </section>
+
+  <section id="activities">
+    <h2>Extracurricular Activities</h2>
+    <ul>
+      <li>Rollball (National Level)</li>
+      <li>Dance</li>
+      <li>Guitar</li>
+      <li>Cricket</li>
+      <li>Badminton</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <span>Email: <a href="mailto:suhaniloya@gmail.com">suhaniloya@gmail.com</a></span>
+      <span>Phone: 7743811000</span>
+      <span>Location: Nagpur, India</span>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Suhani Loya — Designed with professionalism,struggle and purpose
+  </footer>
+</body>
